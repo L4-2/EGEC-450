@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "systick.h": "c",
+        "tm4c123gh6pm.h": "c"
+    }
+}
