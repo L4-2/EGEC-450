@@ -54,23 +54,23 @@ void SysTick_Init(void){
 // The delay parameter is in units of the core clock (units of 12.5 nsec for 80 MHz clock)
 void SysTick_Wait(uint32_t delay){
   // method #1: set Reload Value Register, clear Current Value Register, poll COUNTFLAG in Control and Status Register
-  if(delay <= 1){
-    // without this step:
-    // if delay == 0, this function will wait 0x00FFFFFF cycles
-    // if delay == 1, this function will never return (because COUNTFLAG is set on 1->0 transition)
-    return;  // do nothing; at least 1 cycle has already passed anyway
-  }
-  NVIC_ST_RELOAD_R = (delay - 1); // count down to zero
-  NVIC_ST_CURRENT_R = 0;        // any write to CVR clears it and COUNTFLAG in CSR
-  while((NVIC_ST_CTRL_R&NVIC_ST_CTRL_COUNT) == 0){ // wait for COUNTFLAG to be set
-  }
+  // if(delay <= 1){
+  //   // without this step:
+  //   // if delay == 0, this function will wait 0x00FFFFFF cycles
+  //   // if delay == 1, this function will never return (because COUNTFLAG is set on 1->0 transition)
+  //   return;  // do nothing; at least 1 cycle has already passed anyway
+  // }
+  // NVIC_ST_RELOAD_R = (delay - 1); // count down to zero
+  // NVIC_ST_CURRENT_R = 0;        // any write to CVR clears it and COUNTFLAG in CSR
+  // while((NVIC_ST_CTRL_R&NVIC_ST_CTRL_COUNT) == 0){ // wait for COUNTFLAG to be set
+  // }
   // method #2: repeatedly evaluate elapsed time
-  /*  volatile uint32_t elapsedTime;
+  volatile uint32_t elapsedTime;
   uint32_t startTime = NVIC_ST_CURRENT_R;
   do{
     elapsedTime = (startTime-NVIC_ST_CURRENT_R)&0x00FFFFFF;
   }
-  while(elapsedTime <= delay);*/
+  while(elapsedTime <= delay);
 }
 // Time delay using busy wait
 // This assumes 80 MHz system clock
