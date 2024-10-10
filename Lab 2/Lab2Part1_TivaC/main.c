@@ -18,7 +18,7 @@ uint32_t pedButtonTimer = 0;
 // State definitions
 struct State
 {
-  uint32_t output;               // Traffic light control output
+  uint32_t output;             // Traffic light control output
   uint32_t time;               // Time to wait in 10ms units
   const struct State *next[8]; // Next state based on input
 };
@@ -71,32 +71,6 @@ void PortD_Init(void)
   GPIO_PORTD_DEN_R |= 0x0F; // 7) enable digital I/O on PD0, PD1, PD2, PD3
 }
 
-// void PortB_Init()
-// {
-//   volatile unsigned long delay;
-
-//   SYSCTL_RCGCGPIO_R |= 0x02; // 1) activate clock for Port B
-
-//   delay = SYSCTL_RCGCGPIO_R; // allow time for clock to start
-
-//   GPIO_PORTB_LOCK_R = 0x4C4F434B; // 2) unlock GPIO Port B
-
-//   GPIO_PORTB_CR_R = 0x03; // allow changes to PB0 and PB1
-
-//   GPIO_PORTB_AMSEL_R &= ~0x03; // 3) disable analog on PB0 and PB1
-
-//   GPIO_PORTB_PCTL_R &= ~0x000000FF; // 4) PCTL GPIO on PB0 and PB1
-
-//   GPIO_PORTB_DIR_R &= ~0x03; // 5) PB0 and PB1 as inputs
-
-//   GPIO_PORTB_AFSEL_R &= ~0x03; // 6) disable alt funct on PB0 and PB1
-
-//   GPIO_PORTB_DEN_R |= 0x03; // 7) enable digital I/O on PB0 and PB1
-
-//   // Optionally, enable pull-up resistors on PB0 and PB1
-//   GPIO_PORTB_PUR_R |= 0x03; // enable pull-up on PB0 and PB1
-// }
-
 // Setup for Port A to enable PA6 and PA7 as inputs
 void PortA_Init(void)
 {
@@ -119,9 +93,6 @@ void PortA_Init(void)
   GPIO_PORTA_AFSEL_R &= ~0xE0; // 6) disable alt funct on PA5, PA6, and PA7
 
   GPIO_PORTA_DEN_R |= 0xE0; // 7) enable digital I/O on PA5, PA6, and PA7
-
-  // Optionally, enable pull-up resistors on PA5, PA6, and PA7
-  // GPIO_PORTA_PUR_R |= 0xE0; // enable pull-up on PA5, PA6, and PA7
 }
 
 void ShiftRegister_ShiftData(uint8_t data)
@@ -177,21 +148,6 @@ void main(void)
   // PD6 and PD7 are the buttons
   while (1)
   {
-    // // output pattern to leds
-    // ShiftRegister_ShiftData(Pt->output);
-
-    // // latch the data to the leds
-    // ShiftRegister_LatchData();
-
-    // // wait for the specified time
-    // SysTick_Wait10ms(Pt->time);
-
-    // // take input from the buttons
-    // input = (GPIO_PORTA_DATA_R & 0xE0) >> 5;
-
-    // // transition to the next state based on the input
-    // Pt = Pt->next[input];
-
     // output pattern to leds
     ShiftRegister_ShiftData(Pt->output);
 
