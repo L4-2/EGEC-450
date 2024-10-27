@@ -1,0 +1,9 @@
+"./PLL.obj"
+"./SSI2.obj"
+"./SysTick.obj"
+"./Timer0A.obj"
+"./Timer1A.obj"
+"./main.obj"
+"./tm4c123gh6pm_startup_ccs.obj"
+"../tm4c123gh6pm.cmd"
+-llibc.a
