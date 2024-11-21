@@ -14,7 +14,9 @@ main.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_st
 main.obj: ../LCD.h
 main.obj: ../TimerA0.h
 main.obj: ../PLL.h
+main.obj: ../SysTickInts.h
 main.obj: ../ADCSWTrigger.h
+main.obj: ../tm4c123gh6pm.h
 
 ../main.c:
 
@@ -44,5 +46,9 @@ C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h:
 
 ../PLL.h:
 
+../SysTickInts.h:
+
 ../ADCSWTrigger.h:
+
+../tm4c123gh6pm.h:
 

@@ -13,6 +13,7 @@ ORDERED_OBJS += \
 "./ADCSWTrigger.obj" \
 "./LCD.obj" \
 "./PLL.obj" \
+"./SysTickInts.obj" \
 "./TimerA0.obj" \
 "./main.obj" \
 "./tm4c123gh6pm_startup_ccs.obj" \
@@ -146,8 +147,8 @@ Lab\ 4.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "ADCSWTrigger.obj" "LCD.obj" "PLL.obj" "TimerA0.obj" "main.obj" "tm4c123gh6pm_startup_ccs.obj" 
-	-$(RM) "ADCSWTrigger.d" "LCD.d" "PLL.d" "TimerA0.d" "main.d" "tm4c123gh6pm_startup_ccs.d" 
+	-$(RM) "ADCSWTrigger.obj" "LCD.obj" "PLL.obj" "SysTickInts.obj" "TimerA0.obj" "main.obj" "tm4c123gh6pm_startup_ccs.obj" 
+	-$(RM) "ADCSWTrigger.d" "LCD.d" "PLL.d" "SysTickInts.d" "TimerA0.d" "main.d" "tm4c123gh6pm_startup_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

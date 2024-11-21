@@ -210,7 +210,7 @@ void LCD_OutUHex(uint32_t number)
 // unsigned decimal, resolution 0.001, range 0.000 to 9.999
 // Inputs:  an unsigned 32-bit number
 // Outputs: none
-// E.g., 0,    then output "0.000 "
+// E.g., 0,    then output "000.0 "
 //       3,    then output "0.003 "
 //       89,   then output "0.089 "
 //       123,  then output "0.123 "
@@ -229,10 +229,10 @@ void LCD_OutUFix(uint32_t number)
     else
     {
         // set a temporary array to store the number passed in
-        int temp[5];
+        int temp[4];
 
         uint16_t i;
-        
+
         // store every digit of the number in the array
         for (i = 0; i < 4; i++)
         {
@@ -240,17 +240,17 @@ void LCD_OutUFix(uint32_t number)
             number /= 10;
         }
 
-        // output the 1000s place value
-        LCD_OutUDec(temp[3]);
-
-        // output a decimal point
-        LCD_OutChar('.');
+        // // output the 1000s place value
+        // LCD_OutUDec(temp[3]);
 
         // output the 100s place value
         LCD_OutUDec(temp[2]);
 
         // output the 10s place value
         LCD_OutUDec(temp[1]);
+
+        // output a decimal point
+        LCD_OutChar('.');
 
         // output the 1s place value
         LCD_OutUDec(temp[0]);
