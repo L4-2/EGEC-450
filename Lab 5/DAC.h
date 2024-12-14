@@ -3,10 +3,10 @@
 
 #include <stdint.h>
 
-// Initialize the DAC
+// Initializes the DAC by setting up the GPIO pins
 void DAC_Init(void);
 
-// Output to DAC
-void DAC_Out(uint8_t data);
+// Outputs a digital value to the DAC
+void DAC_Out(uint8_t value);
 
 #endif // DAC_H

@@ -1,6 +1,10 @@
 "./DAC.obj"
 "./PLL.obj"
+"./Sound.obj"
+"./SysTickInts.obj"
+"./Timer0A.obj"
 "./main.obj"
+"./piano.obj"
 "./tm4c123gh6pm_startup_ccs.obj"
 "../tm4c123gh6pm.cmd"
 -llibc.a

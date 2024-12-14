@@ -1,40 +1,40 @@
 # FIXED
 
 PLL.obj: ../PLL.c
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdint.h
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_ti_config.h
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/linkage.h
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_stdint40.h
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/stdint.h
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/cdefs.h
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_types.h
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_types.h
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h
-PLL.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdint.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_ti_config.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/linkage.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_stdint40.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/stdint.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/cdefs.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_types.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_types.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h
+PLL.obj: F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h
 PLL.obj: ../PLL.h
 PLL.obj: ../tm4c123gh6pm.h
 
 ../PLL.c:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdint.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdint.h:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_ti_config.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_ti_config.h:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/linkage.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/linkage.h:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_stdint40.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_stdint40.h:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/stdint.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/stdint.h:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/cdefs.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/cdefs.h:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_types.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_types.h:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_types.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_types.h:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h:
 
-C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h:
+F:/TI/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h:
 
 ../PLL.h:
 
