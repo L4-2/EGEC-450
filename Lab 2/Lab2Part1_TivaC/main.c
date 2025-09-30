@@ -12,51 +12,22 @@
 
 // input variables
 
-
 uint32_t input;
 
 // State definitions
 
-
-
 struct State
 {
-  uint32_t output;             // Traffic light control output
+  uint32_t output; // Traffic light control output
 
+  uint32_t time; // Time to wait in 10ms units
 
-
-  uint32_t time;               // Time to wait in 10ms units
-
-
-
-
-
-  const struct State* next[8]; // Next state based on input
-
-
-
-
-
-
+  const struct State *next[8]; // Next state based on input
 };
 
 typedef const struct State SType;
 
-
-
-
-
-
-
-
 // Led output definitions
-
-
-
-
-
-
-
 
 #define GoS 0x4C
 #define WaitS 0x4A
@@ -68,9 +39,6 @@ typedef const struct State SType;
 #define pedHurry2 0x09
 
 // State identifiers
-
-
-
 
 #define goS &FSM[0]
 #define waitS &FSM[1]
@@ -302,51 +270,3 @@ void main(void)
     Pt = Pt->next[input];
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
