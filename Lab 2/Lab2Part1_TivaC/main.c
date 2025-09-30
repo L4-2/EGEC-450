@@ -22,7 +22,7 @@ struct State
 
   uint32_t time; // Time to wait in 10ms units
 
-  const struct State *next[8]; // Next state based on input
+  const struct State* next[8]; // Next state based on input
 };
 
 typedef const struct State SType;
