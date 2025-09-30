@@ -4,25 +4,60 @@
 #include "tm4c123gh6pm.h"
 
 // Shift Register Connections
+
 #define SER 0x01   // PD0
 #define RCLK 0x02  // PD1
 #define SRCLK 0x04 // PD2
 #define SRCLR 0x08 // PD3
 
 // input variables
+
+
 uint32_t input;
 
 // State definitions
+
+
+
 struct State
 {
   uint32_t output;             // Traffic light control output
+
+
+
   uint32_t time;               // Time to wait in 10ms units
-  const struct State *next[8]; // Next state based on input
+
+
+
+
+
+  const struct State* next[8]; // Next state based on input
+
+
+
+
+
+
 };
 
 typedef const struct State SType;
 
+
+
+
+
+
+
+
 // Led output definitions
+
+
+
+
+
+
+
+
 #define GoS 0x4C
 #define WaitS 0x4A
 #define GoW 0x61
@@ -33,6 +68,10 @@ typedef const struct State SType;
 #define pedHurry2 0x09
 
 // State identifiers
+
+
+
+
 #define goS &FSM[0]
 #define waitS &FSM[1]
 #define goW &FSM[2]
@@ -263,3 +302,51 @@ void main(void)
     Pt = Pt->next[input];
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
